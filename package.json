@@ -1,0 +1,61 @@
+{
+  "name": "ng-luxon-duration",
+  "version": "0.1.0",
+  "description": "Pipes for use luxon.js duration in Angular view",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "ngc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vin-car/ng-luxon-duration.git"
+  },
+  "keywords": [
+    "luxon",
+    "duration",
+    "date",
+    "angular",
+    "immutable"
+  ],
+  "author": "Vincenzo Carrese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vin-car/ng-luxon-duration/issues"
+  },
+  "homepage": "https://github.com/vin-car/ng-luxon-duration#readme",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "luxon": "^0.2.12"
+  },
+  "peerDependencies": {
+    "angular": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^5.1.2",
+    "@angular/compiler": "^5.1.2",
+    "@angular/compiler-cli": "^5.1.2",
+    "@angular/core": "^5.1.2",
+    "@angular/platform-browser": "^5.1.2",
+    "@types/jest": "^22.0.1",
+    "jest": "^21.2.1",
+    "rxjs": "^5.5.6",
+    "typescript": "2.5.x",
+    "zone.js": "^0.8.19"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "roots": [
+      "src"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-setup.js",
+    "testRegex": "\\.test\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/jest-typescript.js"
+    }
+  }
+}
