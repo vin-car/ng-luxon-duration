@@ -60,7 +60,20 @@ Example:
   `
 })
 ```
+### `aldFromObject` pipe
 
+Create a Duration from a Javascript object with keys like 'years' and 'hours'. See [`Duration.fromObject`](https://moment.github.io/luxon/docs/class/src/duration.js~Duration.html#static-method-fromObject) for more details about the keys and the accepted options.
+
+Example:
+
+``` typescript
+@Component({
+  selector: 'app',
+  template: `
+    Last updated: {{myDurationObject | aldFromObject | aldToFormat:'hh:mm:ss' }}
+  `
+})
+```
 
 ### `aldToFormat` pipe
 

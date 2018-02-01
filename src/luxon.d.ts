@@ -11,6 +11,14 @@ declare module "luxon" {
     toFormat(fmt: string, opts?: object): string;
     toObject(opts?: any): object;
 
+    years: number;
+    months: number;
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
     milliseconds: number;
+
+    conversionAccuracy: string;
   }
 }
