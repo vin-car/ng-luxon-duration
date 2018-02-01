@@ -46,6 +46,22 @@ Example:
 })
 ```
 
+### `aldFromMillis` pipe
+
+Create a Duration from a number of milliseconds. Accepts same optional `opts` parameter as [`Duration.fromMillis`](https://moment.github.io/luxon/docs/class/src/duration.js~Duration.html#static-method-fromMillis).
+
+Example:
+
+``` typescript
+@Component({
+  selector: 'app',
+  template: `
+    Last updated: {{millis | aldFromMillis | aldToFormat:'hh:mm:ss' }}
+  `
+})
+```
+
+
 ### `aldToFormat` pipe
 
 Returns a string representation of this Duration formatted according to the specified format string.  Accepts same optional `opts` parameter as [`Duration.fromISO`](https://moment.github.io/luxon/docs/class/src/duration.js~Duration.html#instance-method-toFormat).
