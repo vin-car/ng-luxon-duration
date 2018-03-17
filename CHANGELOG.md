@@ -1,4 +1,4 @@
-## 0.0.2
+## 0.2.0
 
 Added:
 
@@ -6,7 +6,7 @@ Added:
  - `aldFromObject` pipe
  - `aldToISO` pipe
 
-## 0.0.1
+## 0.1.0
 
 First version of ng-luxon-duration, includes:
 
