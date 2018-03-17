@@ -10,6 +10,7 @@ declare module "luxon" {
 
     toFormat(fmt: string, opts?: object): string;
     toObject(opts?: any): object;
+    toISO(): string;
 
     years: number;
     months: number;

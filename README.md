@@ -1,6 +1,6 @@
 # ng-luxon-duration
 
-Pipes for use and format Luxon `Duration` in Angular (2+)
+Pipes for use and format [Luxon](https://moment.github.io/luxon/index.html) [`Duration`](https://moment.github.io/luxon/docs/class/src/duration.js~Duration.html) in Angular (2+)
 
 ---
 
@@ -86,6 +86,21 @@ Example:
   selector: 'app',
   template: `
     Last updated: {{myISODuration | aldFromISO | aldToFormat:'hh:mm:ss' }}
+  `
+})
+```
+
+### `aldToISO` pipe
+
+Returns an ISO 8601-compliant string representation of this Duration.
+
+Example:
+
+``` typescript
+@Component({
+  selector: 'app',
+  template: `
+    Last updated: {{myISODuration | aldFromISO | aldToISO }}
   `
 })
 ```
