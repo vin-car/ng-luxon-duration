@@ -23,6 +23,18 @@ describe('DurationFromISOPipe', () => {
       check('P2W', { weeks: 2 });
     });
 
+    test('Duration.fromISO can parse fractions of seconds', () => {
+      const check = (s:string, ob:object) => {
+        expect(durationFromISOPipe.transform(s).toObject()).toEqual(ob);
+      };
+
+      check('PT54M32.5S', { minutes: 54, seconds: 32, milliseconds: 500 });
+      check('PT54M32.53S', { minutes: 54, seconds: 32, milliseconds: 530 });
+      check('PT54M32.534S', { minutes: 54, seconds: 32, milliseconds: 534 });
+      check('PT54M32.5348S', { minutes: 54, seconds: 32, milliseconds: 534 });
+      check('PT54M32.034S', { minutes: 54, seconds: 32, milliseconds: 34 });
+    });
+
     test('Duration.fromISO rejects junk', () => {
       const rejects = (s:string) => {
         expect(durationFromISOPipe.transform(s).isValid).toBe(false);

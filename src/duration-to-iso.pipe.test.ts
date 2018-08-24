@@ -23,12 +23,12 @@ describe('DurationToISOPipe', () => {
     });
 
     test("Duration#toISO() returns full ISO string", () => {
-      expect(pipe.transform(dur())).toBe('P1Y2M3DT4H5M6S');
+      expect(pipe.transform(dur())).toBe('P1Y2M3DT4H5M6.007S');
     });
 
-    test("Duration#toISO() does not return milliseconds", () => {
-      const lil = Duration.fromMillis(6);
-      expect(pipe.transform(lil)).toBe('PT');
+    test("Duration#toISO() returns milliseconds", () => {
+      const lil = Duration.fromMillis(7);
+      expect(pipe.transform(lil)).toBe('PT0.007S');
     });
     
     test("Duration#toISO() returns seconds", () => {
