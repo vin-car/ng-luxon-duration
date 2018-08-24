@@ -1,3 +1,7 @@
+## 0.3.0
+
+Updated luxon version, now ISO strings include milliseconds
+
 ## 0.2.0
 
 Added:
