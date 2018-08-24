@@ -1,6 +1,6 @@
 {
   "name": "ng-luxon-duration",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Pipes for use luxon.js duration in Angular view",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/vin-car/ng-luxon-duration#readme",
   "dependencies": {
-    "angular": "^1.6.8",
-    "luxon": "^0.2.12"
+    "luxon": "^1.3.1"
   },
   "peerDependencies": {
     "angular": ">=2.0.0"
