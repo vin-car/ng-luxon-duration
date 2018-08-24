@@ -25,10 +25,11 @@ describe('DurationFromISOPipe', () => {
 
     test('Duration.fromISO rejects junk', () => {
       const rejects = (s:string) => {
-        expect(durationFromISOPipe.transform(s).as('milliseconds')).toBe(0);
+        expect(durationFromISOPipe.transform(s).isValid).toBe(false);
       };
 
       rejects('poop');
+      rejects('PTglorb');
       rejects('P5Y34S');
       rejects('5Y');
       rejects('P34S');
