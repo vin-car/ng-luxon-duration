@@ -21,5 +21,6 @@ declare module "luxon" {
     milliseconds: number;
 
     conversionAccuracy: string;
+    isValid: boolean;
   }
 }
