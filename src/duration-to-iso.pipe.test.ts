@@ -61,5 +61,13 @@ describe('DurationToISOPipe', () => {
       expect(pipe.transform(lil)).toBe('P7Y');
     });
 
+    test('Duration#toISO handles negative durations', () => {
+      expect(Duration.fromObject({ years: -3, seconds: -45 }).toISO()).toBe('P3YT45S');
+    });
+
+    test('Duration#toISO handles mixed negative/positive durations', () => {
+      expect(Duration.fromObject({ years: 3, seconds: -45 }).toISO()).toBe('P2YT31535955S');
+    });
+
   });
 });
