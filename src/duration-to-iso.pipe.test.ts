@@ -62,13 +62,27 @@ describe('DurationToISOPipe', () => {
     });
 
     test('Duration#toISO handles negative durations', () => {
-      expect(Duration.fromObject({ years: -3, seconds: -45 }).toISO()).toBe('P-3YT-45S');
+      const lil = Duration.fromObject({ years: -3, seconds: -45 });
+      expect(pipe.transform(lil)).toBe('P-3YT-45S');
     });
 
     test('Duration#toISO handles mixed negative/positive durations', () => {
-      expect(Duration.fromObject({ years: 3, seconds: -45 }).toISO()).toBe("P3YT-45S");
-      expect(Duration.fromObject({ years: 0, seconds: -45 }).toISO()).toBe("PT-45S");
-      expect(Duration.fromObject({ years: -5, seconds: 34 }).toISO()).toBe("P-5YT34S");
+      const dur1 = Duration.fromObject({ years: 3, seconds: -45 });
+      expect(pipe.transform(dur1)).toBe("P3YT-45S");
+      const dur2 = Duration.fromObject({ years: 0, seconds: -45 });
+      expect(pipe.transform(dur2)).toBe("PT-45S");
+      const dur3 = Duration.fromObject({ years: -5, seconds: 34 });
+      expect(pipe.transform(dur3)).toBe("P-5YT34S");
+    });
+
+    test("Duration#toISO returns null for invalid durations", () => {
+      const lil = Duration.invalid("because");
+      expect(pipe.transform(lil)).toBe(null);
+    });
+
+    test("Duration#toISO handles milliseconds duration", () => {
+      const lil = Duration.fromObject({ milliseconds: 7 })
+      expect(pipe.transform(lil)).toBe("PT0.007S");
     });
 
   });
