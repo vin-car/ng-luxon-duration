@@ -1,5 +1,9 @@
 ## 0.3.0
 
+Updated luxon version to `^1.6.2`, improved support to negative durations
+
+## 0.3.0
+
 Updated luxon version, now ISO strings include milliseconds
 
 ## 0.2.0
