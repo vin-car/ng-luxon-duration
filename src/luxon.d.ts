@@ -4,6 +4,7 @@ declare module "luxon" {
     static fromISO(text: string, opts?: object): Duration;
     static fromMillis(count: number, opts?: object): Duration;
     static fromObject(obj: object): Duration;
+    static invalid(reason: string, explanation?: string): Duration;
 
     as(unit: string): number;
     get(unit: string): number;

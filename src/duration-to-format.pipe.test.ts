@@ -115,7 +115,7 @@ describe('DurationToFormatPipe', () => {
 
     test("Duration#toFormat returns a lame string for invalid durations", () => {
       const lil = Duration.invalid("because");
-      expect(pipe.transform(lil)).toBe("Invalid Duration");
+      expect(pipe.transform(lil, 'yy')).toBe("Invalid Duration");
     });
   });
 });
