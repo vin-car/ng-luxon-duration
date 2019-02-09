@@ -1,4 +1,8 @@
-## 0.3.0
+## 0.4.1
+
+Improved `package.json` and moved luxon to `peerDependencies`
+
+## 0.4.0
 
 Updated luxon version to `^1.6.2`, improved support to negative durations
 
