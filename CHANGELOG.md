@@ -1,3 +1,7 @@
+## 0.4.2
+
+Improved `package.json` to remove security alerts
+
 ## 0.4.1
 
 Improved `package.json` and moved luxon to `peerDependencies`
