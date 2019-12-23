@@ -1,6 +1,6 @@
 {
   "name": "ng-luxon-duration",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Pipes for use luxon.js duration in Angular view",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -30,17 +30,17 @@
     "luxon": "^1.6.2"
   },
   "devDependencies": {
-    "@angular/common": "^5.2.11",
-    "@angular/compiler": "^5.2.11",
-    "@angular/compiler-cli": "^5.2.11",
-    "@angular/core": "^5.2.11",
-    "@angular/platform-browser": "^5.2.11",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
     "@types/jest": "^23.3.10",
-    "jest": "^23.6.0",
+    "jest": "^25.0.0",
     "luxon": "^1.6.2",
-    "rxjs": "^5.5.12",
-    "typescript": "2.5.x",
-    "zone.js": "^0.8.26"
+    "rxjs": "^6.4.0",
+    "typescript": "~3.5.3",
+    "zone.js": "^0.9.1"
   },
   "jest": {
     "moduleFileExtensions": [
