@@ -30,17 +30,17 @@
     "luxon": "^1.6.2"
   },
   "devDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/platform-browser": "^8.2.14",
+    "@angular/common": "^9.1.4",
+    "@angular/compiler": "^9.1.4",
+    "@angular/compiler-cli": "^9.1.4",
+    "@angular/core": "^9.1.4",
+    "@angular/platform-browser": "^9.1.4",
     "@types/jest": "^23.3.10",
-    "jest": "^25.0.0",
+    "jest": "^25.5.3",
     "luxon": "^1.6.2",
     "rxjs": "^6.4.0",
-    "typescript": "~3.5.3",
-    "zone.js": "^0.9.1"
+    "typescript": "~3.6.0",
+    "zone.js": "^0.10.3"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -50,7 +50,7 @@
     "roots": [
       "src"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/jest-setup.js",
+    "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"],
     "testRegex": "\\.test\\.ts$",
     "transform": {
       "^.+\\.ts$": "<rootDir>/jest-typescript.js"
