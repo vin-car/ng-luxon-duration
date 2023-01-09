@@ -27,7 +27,7 @@
   "homepage": "https://github.com/vin-car/ng-luxon-duration#readme",
   "peerDependencies": {
     "@angular/core": ">=2.0.0",
-    "luxon": "^1.6.2"
+    "luxon": "^2.5.2"
   },
   "devDependencies": {
     "@angular/common": "^9.1.4",
@@ -37,7 +37,7 @@
     "@angular/platform-browser": "^9.1.4",
     "@types/jest": "^23.3.10",
     "jest": "^25.5.3",
-    "luxon": "^1.6.2",
+    "luxon": "^2.5.2",
     "rxjs": "^6.4.0",
     "typescript": "~3.6.0",
     "zone.js": "^0.10.3"
